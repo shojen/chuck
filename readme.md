@@ -28,3 +28,7 @@ Las rutas para la api es http://tuproyecto.io/api/v1 tanto para post como para g
 Ejecuta el comando php artisan listar:novistos para que te aparezca el listado de las frases que no han aparecido aún en la home.
 
 Ejecuta el comando php artisan listar:vistos para que aparezca el listado de las frases que ya han aparecido en la home.
+
+## Observaciones
+
+He dejado una rama llamada oauth donde está instalado y configurado para usar oauth en la api.
