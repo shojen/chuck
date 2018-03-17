@@ -14,7 +14,7 @@ class PhraseRequest extends FormRequest
      */
     public function authorize()
     {        
-        if(Auth::check() || Auth::attempt(request()->only('email', 'password')))
+        if(Auth::check() || Auth::attempt(request()->only('username', 'password')))
         {
             return true;
         }

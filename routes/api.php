@@ -14,4 +14,7 @@ use Illuminate\Http\Request;
 */
 
 Route::get('v1','ApiController@getPhrase')->name('apiv1');
-Route::post('v1','ApiController@setPhrase')->name('setapiv1');
+Route::post('v1','ApiController@setPhrase')->name('setapiv1')->middleware('auth:api');
+Route::middleware('auth:api')->get('/user', function (Request $request) {
+    return $request->user();
+});
